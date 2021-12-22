@@ -1,3 +1,6 @@
+import 'package:car_sell/presentation/components/CustomHeadingSeller.dart';
+import 'package:car_sell/presentation/components/CustomTextFieldCity.dart';
+import 'package:car_sell/presentation/components/CustomTextFieldPin.dart';
 import 'package:flutter/material.dart';
 
 /// Created by Naveen Verma on 22-12-2021
@@ -11,9 +14,23 @@ class SellerInfoScreen extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            CustomPageHeadingSeller(),
+            CustomTextFieldCity(),
+            CustomTextFieldPin(),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 20, 10, 10),
+              child: Image.asset(
+                'assets/images/bikesmall.png',
+                fit: BoxFit.fitWidth,
+              ),
+            )
+          ],
+        ));
   }
 }
