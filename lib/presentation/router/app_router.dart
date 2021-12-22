@@ -1,3 +1,4 @@
+import 'package:car_sell/presentation/screens/CarDetails.dart';
 import 'package:car_sell/presentation/screens/home.dart';
 import 'package:car_sell/presentation/screens/seller_info_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,13 @@ class AppRouter {
         return MaterialPageRoute(
             builder: (_) => const SellerInfoScreen(
                   title: 'Seller Information',
+                ));
+        break;
+
+      case CarDetails.id:
+        return MaterialPageRoute(
+            builder: (_) => const CarDetails(
+                  title: 'Car Details',
                 ));
         break;
       default:

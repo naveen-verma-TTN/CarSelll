@@ -1,3 +1,4 @@
+import 'package:car_sell/presentation/screens/CarDetails.dart';
 import 'package:flutter/material.dart';
 
 /// Created by Naveen Verma on 22-12-2021
@@ -33,6 +34,12 @@ class HomeScreen extends StatelessWidget {
               Navigator.pushNamed(context, '/seller_info_screen');
             },
             child: const Text("Go To Seller Screen"),
+          ),
+          OutlinedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, CarDetails.id);
+            },
+            child: const Text("Go To Car Details"),
           )
         ],
       ),
