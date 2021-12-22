@@ -23,9 +23,6 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, '/seller_info_screen');
             },
-            style: OutlinedButton.styleFrom(
-              shape: const StadiumBorder(),
-            ),
             child: const Text("Go To Seller Screen"),
           )
         ],

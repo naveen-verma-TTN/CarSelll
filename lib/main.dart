@@ -14,8 +14,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Car Sell',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+        appBarTheme: AppBarTheme(color: Colors.blueGrey[900]),
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        appBarTheme: AppBarTheme(color: Colors.blueGrey[900]),
+        primaryColor: Colors.blueGrey,
+        scaffoldBackgroundColor: Colors.blueGrey[800],
+        buttonTheme: ButtonThemeData(
+          buttonColor: Colors.blueGrey[900],
+          textTheme: ButtonTextTheme.primary,
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            primary: Colors.white,
+            backgroundColor: Colors.blueGrey[500],
+            shape: const StadiumBorder(),
+            padding: const EdgeInsets.all(10.0),
+            textStyle: const TextStyle(
+                fontSize: 18.0,
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 0.2),
+          ),
+        ),
+      ),
+      themeMode: ThemeMode.dark,
       onGenerateRoute: AppRouter().onGenerateRoute,
     );
   }
