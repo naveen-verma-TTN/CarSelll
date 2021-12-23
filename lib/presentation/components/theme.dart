@@ -30,7 +30,6 @@ class CustomTheme {
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         primary: Colors.white,
-        backgroundColor: Colors.blueGrey[500],
         shape: const StadiumBorder(),
         padding: const EdgeInsets.all(15.0),
         textStyle: const TextStyle(
@@ -61,7 +60,6 @@ class CustomTheme {
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         primary: Colors.white,
-        backgroundColor: Colors.blueGrey[900],
         shape: const StadiumBorder(),
         padding: const EdgeInsets.all(15.0),
         textStyle: const TextStyle(

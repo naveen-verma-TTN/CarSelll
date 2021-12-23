@@ -1,6 +1,3 @@
-import 'package:car_sell/presentation/components/CustomHeadingSeller.dart';
-import 'package:car_sell/presentation/components/CustomTextFieldCity.dart';
-import 'package:car_sell/presentation/components/CustomTextFieldPin.dart';
 import 'package:car_sell/presentation/components/components.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -136,6 +133,7 @@ class SellerScreen extends StatelessWidget {
 
   final String title;
 
+  @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
