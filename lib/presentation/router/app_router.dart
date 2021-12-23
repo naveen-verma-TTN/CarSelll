@@ -1,4 +1,4 @@
-import 'package:car_sell/presentation/screens/CarDetails.dart';
+import 'package:car_sell/presentation/screens/BikeDetails.dart';
 import 'package:car_sell/presentation/screens/home.dart';
 import 'package:car_sell/presentation/screens/seller_info_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,11 +23,8 @@ class AppRouter {
                 ));
         break;
 
-      case CarDetails.id:
-        return MaterialPageRoute(
-            builder: (_) => const CarDetails(
-                  title: 'Car Details',
-                ));
+      case BikeDetails.id:
+        return MaterialPageRoute(builder: (_) => const BikeDetails());
         break;
       default:
         return null;

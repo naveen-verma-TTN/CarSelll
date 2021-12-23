@@ -1,4 +1,4 @@
-import 'package:car_sell/presentation/screens/CarDetails.dart';
+import 'package:car_sell/presentation/screens/BikeDetails.dart';
 import 'package:flutter/material.dart';
 
 /// Created by Naveen Verma on 22-12-2021
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
           ),
           OutlinedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CarDetails.id);
+              Navigator.pushNamed(context, BikeDetails.id);
             },
             child: const Text("Go To Car Details"),
           )
