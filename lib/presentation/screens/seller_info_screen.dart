@@ -1,3 +1,6 @@
+import 'package:car_sell/presentation/components/CustomHeadingSeller.dart';
+import 'package:car_sell/presentation/components/CustomTextFieldCity.dart';
+import 'package:car_sell/presentation/components/CustomTextFieldPin.dart';
 import 'package:car_sell/presentation/components/components.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -63,12 +66,10 @@ class _SellerInfoScreenState extends State<SellerInfoScreen> {
               ),
             ),
             header(activeStep),
-            Expanded(
+            const Expanded(
               child: Center(
-                child: Text(
-                  'Page $activeStep',
-                  style:
-                      const TextStyle(color: Colors.blueGrey, fontSize: 50.0),
+                child: SellerScreen(
+                  title: 'Seller Info',
                 ),
               ),
             ),
@@ -126,6 +127,30 @@ class _SellerInfoScreenState extends State<SellerInfoScreen> {
         ),
         child: const Text('Prev'),
       ),
+    );
+  }
+}
+
+class SellerScreen extends StatelessWidget {
+  const SellerScreen({Key? key, required this.title}) : super(key: key);
+
+  final String title;
+
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        const CustomPageHeadingSeller(),
+        const CustomTextFieldCity(),
+        const CustomTextFieldPin(),
+        Container(
+          margin: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+          child: Image.asset(
+            'assets/images/bikesmall.png',
+            fit: BoxFit.fitWidth,
+          ),
+        )
+      ],
     );
   }
 }

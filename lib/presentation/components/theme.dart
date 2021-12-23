@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 class CustomTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
+    primaryColorLight: Colors.blueGrey,
     appBarTheme: AppBarTheme(color: Colors.blueGrey[900]),
     primaryColor: Colors.blueGrey,
     scaffoldBackgroundColor: Colors.white,
