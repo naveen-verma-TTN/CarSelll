@@ -140,9 +140,8 @@ class SellerScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const CustomPageHeadingSeller(),
-        const CustomTextFieldCity(),
-        const CustomTextFieldPin(),
+        customTextView('Type your city', 'City *'),
+        customTextView('Type your Pin', 'Pin *'),
         Container(
           margin: const EdgeInsets.fromLTRB(10, 20, 10, 10),
           child: Image.asset(
